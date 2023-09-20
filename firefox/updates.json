@@ -1,0 +1,16 @@
+{
+    "addons": {
+        "nitsig@ni.fe.up.pt": {
+            "updates": [
+                {
+                    "version": "1.0.0",
+                    "update_link": "https://ni.fe.up.pt/nitsig/firefox/1.0.0.xpi"
+                },
+                {
+                    "version": "1.0.1",
+                    "update_link": "https://ni.fe.up.pt/nitsig/firefox/1.0.1.xpi"
+                }
+            ]
+        }
+    }
+}

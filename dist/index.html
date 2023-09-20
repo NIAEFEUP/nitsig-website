@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NitSig</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link href="index.css" rel="stylesheet" />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon-16x16.png"
+        />
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <body
+        class="min-h-full m-auto p-8 gap-16 max-w-md flex flex-col items-stretch justify-center text-black dark:text-white bg-bgOne dark:bg-bgOneDark"
+    >
+        <header class="flex flex-col gap-1 text-center">
+            <img
+                class="dark:hidden h-auto object-contain self-stretch"
+                src="logo-extended.png"
+                alt="NitSig logo"
+            />
+            <img
+                class="hidden dark:inline h-auto object-contain self-stretch"
+                src="logo-extended-white.png"
+                alt="NitSig logo"
+            />
+            <p class="text font-medium dark:text-accentOneDark text-accentOne">
+                Made by
+                <a
+                    href="https://ni.fe.up.pt"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="font-bold text-accentThree dark:text-accentFive hover:underline"
+                >
+                    niaefeup
+                </a>
+            </p>
+        </header>
+
+        <nav class="flex flex-col gap-4">
+            <a
+                href="https://chrome.google.com/webstore/detail/nitsig/ogjckeklbemdbkcomehlmlelmldecbpa"
+                class="flex flex-row justify-center items-center text-center rounded-md text-xl p-4 gap-4 bg-bgTwo dark:bg-bgTwoDark group [&:not([href])]:bg-opacity-50 [&:not([href])]:after:content-['SOON'] after:font-black"
+                id="chrome"
+            >
+                <i
+                    class="ri-chrome-line text-2xl leading-6 group-[&:not([href])]:opacity-50"
+                ></i>
+                <span
+                    class="flex-1 group-hover:underline group-[&:not([href])]:no-underline group-[&:not([href])]:pointer-events-none group-[&:not([href])]:select-none group-[&:not([href])]:opacity-50"
+                    >Download for Chrome</span
+                >
+            </a>
+            <a
+                class="flex flex-row justify-center items-center text-center rounded-md text-xl p-4 gap-4 bg-bgTwo dark:bg-bgTwoDark group [&:not([href])]:bg-opacity-50 [&:not([href])]:after:content-['SOON'] after:font-black"
+                id="edge"
+            >
+                <i
+                    class="ri-edge-new-line text-2xl leading-6 group-[&:not([href])]:opacity-50"
+                ></i>
+                <span
+                    class="flex-1 group-hover:underline group-[&:not([href])]:no-underline group-[&:not([href])]:pointer-events-none group-[&:not([href])]:select-none group-[&:not([href])]:opacity-50"
+                    >Download for Edge</span
+                >
+            </a>
+            <a
+                href="firefox/1.0.1.xpi"
+                class="flex flex-row justify-center items-center text-center rounded-md text-xl p-4 gap-4 bg-bgTwo dark:bg-bgTwoDark group [&:not([href])]:bg-opacity-50 [&:not([href])]:after:content-['SOON'] after:font-black"
+                id="firefox"
+            >
+                <i
+                    class="ri-firefox-line text-2xl leading-6 group-[&:not([href])]:opacity-50"
+                ></i>
+                <span
+                    class="flex-1 group-hover:underline group-[&:not([href])]:no-underline group-[&:not([href])]:pointer-events-none group-[&:not([href])]:select-none group-[&:not([href])]:opacity-50"
+                    >Download for Firefox</span
+                >
+            </a>
+            <a
+                class="flex flex-row justify-center items-center text-center rounded-md text-xl p-4 gap-4 bg-bgTwo dark:bg-bgTwoDark group [&:not([href])]:bg-opacity-50 [&:not([href])]:after:content-['SOON'] after:font-black"
+                id="opera"
+            >
+                <i
+                    class="ri-opera-line text-2xl leading-6 group-[&:not([href])]:opacity-50"
+                ></i>
+                <span
+                    class="flex-1 group-hover:underline group-[&:not([href])]:no-underline group-[&:not([href])]:pointer-events-none group-[&:not([href])]:select-none group-[&:not([href])]:opacity-50"
+                    >Download for Opera</span
+                >
+            </a>
+            <a
+                href="https://apps.apple.com/us/app/nitsig/id6464474402"
+                class="flex flex-row justify-center items-center text-center rounded-md text-xl p-4 gap-4 bg-bgTwo dark:bg-bgTwoDark group [&:not([href])]:bg-opacity-50 [&:not([href])]:after:content-['SOON'] after:font-black"
+                id="safari"
+            >
+                <i
+                    class="ri-safari-line text-2xl leading-6 group-[&:not([href])]:opacity-50"
+                ></i>
+                <span
+                    class="flex-1 group-hover:underline group-[&:not([href])]:no-underline group-[&:not([href])]:pointer-events-none group-[&:not([href])]:select-none group-[&:not([href])]:opacity-50"
+                    >Download for Safari</span
+                >
+            </a>
+        </nav>
+    </body>
+</html>
