@@ -1,0 +1,4 @@
+localhost:80 {
+   root * /srv/dist
+   file_server
+}
