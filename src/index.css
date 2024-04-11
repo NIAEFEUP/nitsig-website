@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg fill="none" stroke="rgb(255 255 255 / 50%)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" version="1.1" viewBox="0 0 30 17.321" xmlns="http://www.w3.org/2000/svg"><line x2="5" y1="8.6603" y2="8.6603"/><polygon points="5 8.6603 10 0 20 0 25 8.6603 20 17.321 10 17.32"/><line x1="25" x2="30" y1="8.6603" y2="8.6603"/></svg>');
+    background-repeat: repeat;
+    background-position: center top;
+    background-size: 10em;
+    background-blend-mode: overlay;
+}
