@@ -29,6 +29,7 @@ jobs:
             - name: Update manifest
               run: |
                   cat <<< $(jq --indent 4 '."addons"."nitsig@ni.fe.up.pt"."updates" += [{ "version": "'${VERSION}'", "update_link": "https://ni.fe.up.pt/nitsig/firefox/'${VERSION}'.xpi" }]' dist/firefox/updates.json) > dist/firefox/updates.json
+                  sed -iE 's/href="\/nitsig\/firefox\/1\.0\.3\.xpi"/href="\/nitsig\/firefox\/'"$VERSION"'.xpi"/' dist/index.html
 
             - name: Commit and push
               uses: actions-js/push@v1.4
