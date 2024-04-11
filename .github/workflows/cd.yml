@@ -24,14 +24,14 @@ jobs:
     
       - name: Download latest xpi
         run: |
-          curl -o dist/firefox/${VERSION}.xpi https://github.com/NIAEFEUP/nitsig/releases/download/${{ inputs.version }}/firefox.xpi
+          curl -Lo dist/firefox/${VERSION}.xpi https://github.com/NIAEFEUP/nitsig/releases/download/${{ inputs.version }}/firefox.xpi
 
       - name: Update manifest
         run: |
-          jq '."addons"."nitsig@ni.fe.up.pt"."updates" += [{ "version": "${VERSION}", "update_link": "https://ni.fe.up.pt/nitsig/firefox/${VERSION}.xpi" }]' dist/firefox/updates.json
+          jq --indent 4 '."addons"."nitsig@ni.fe.up.pt"."updates" += [{ "version": "'${VERSION}'", "update_link": "https://ni.fe.up.pt/nitsig/firefox/'${VERSION}'.xpi" }]' dist/firefox/updates.json | sponge dist/firefox/updates.json
 
       - name: Commit and push
-        uses: actions-js/push@v1
+        uses: actions-js/push@v1.4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: Update firefox to ${{ inputs.version }}
